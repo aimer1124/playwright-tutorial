@@ -28,7 +28,7 @@ jobs:
           echo "days=[${joined%,}]" >> $GITHUB_OUTPUT
         fi
         echo "Detected days: [${joined%,}]"
-        
+
   test:
     needs: detect-days
     if: needs.detect-days.outputs.days != '[]'
@@ -61,9 +61,13 @@ jobs:
       working-directory: ${{ matrix.day }}
       run: pnpm exec playwright test
     
+    - name: Set artifact name
+      id: artifact-name
+      run: echo "name=$(echo '${{ matrix.day }}' | tr -d '/')" >> $GITHUB_OUTPUT
+    
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
-        name: playwright-report-${{ matrix.day }}
+        name: playwright-report-${{ steps.artifact-name.outputs.name }}
         path: ${{ matrix.day }}/playwright-report/
         retention-days: 30
