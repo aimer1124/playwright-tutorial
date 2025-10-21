@@ -1,6 +1,6 @@
 # Playwright Tutorial
 
-## Day 1: Install and run a demo test
+## Step 1: Install and run a demo test
 ### What is Playwright?
 - It is a modern testing framework for web apps.
 - It bundles test runner, assertions, isolation, parallelization, report and rich tools.
@@ -14,13 +14,13 @@
 ### Installation
 - Install Node.js (v14 or later), my current version is `v24.9.0`
 
-- Enter new folder `Day1`, and install Playwright using [pnpm](https://pnpm.io/):
+- Enter new folder `Step1`, and install Playwright using [pnpm](https://pnpm.io/):
   ```bash
   pnpm create playwright
   ```
 - In terminal, it like this:
     ```bash
-    jackson@192 Day1 % pnpm create playwright
+    jackson@192 Step1 % pnpm create playwright
     ! Corepack is about to download https://registry.npmjs.org/pnpm/-/pnpm-10.18.3.tgz
     ? Do you want to continue? [Y/n] y
 
@@ -33,10 +33,10 @@
     ✔ Add a GitHub Actions workflow? (Y/n) · true
     ✔ Install Playwright browsers (can be done manually via 'pnpm exec playwright install')? (Y/n) · true
     Initializing pnpm project (pnpm init)…
-    Wrote to /Users/jackson/Documents/Github/playwright-tutorial/Day1/package.json
+    Wrote to /Users/jackson/Documents/Github/playwright-tutorial/Step1/package.json
 
     {
-    "name": "Day1",
+    "name": "Step1",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -71,7 +71,7 @@
     Writing tests/example.spec.ts.
     Writing package.json.
     Downloading browsers (pnpm exec playwright install)…
-    ✔ Success! Created a Playwright Test project at /Users/jackson/Documents/Github/playwright-tutorial/Day1
+    ✔ Success! Created a Playwright Test project at /Users/jackson/Documents/Github/playwright-tutorial/Step1
 
     Inside that directory, you can run several commands:
 
@@ -112,7 +112,7 @@
   ```
 - The output like this:
     ```bash
-    jackson@192 Day1 % pnpm exec playwright test
+    jackson@192 Step1 % pnpm exec playwright test
 
     Running 6 tests using 4 workers
     6 passed (16.0s)

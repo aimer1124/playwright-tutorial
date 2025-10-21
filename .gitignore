@@ -1,5 +1,5 @@
 # Development scripts
-create-day.sh
+create-step.sh
 
 # Node.js
 node_modules/
@@ -89,4 +89,3 @@ public
 # Temporary folders
 tmp/
 temp/
-Day2/

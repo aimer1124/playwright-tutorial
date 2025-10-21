@@ -1,7 +1,7 @@
 {
-  "name": "playwright-tutorial-day1",
+  "name": "playwright-tutorial",
   "version": "1.0.0",
-  "description": "Playwright Tutorial - Day 1: Getting Started",
+  "description": "Playwright Tutorial - Step by step",
   "main": "index.js",
   "scripts": {},
   "keywords": [
@@ -10,7 +10,7 @@
     "e2e",
     "getting-started"
   ],
-  "author": "",
+  "author": "Yuanjie(Jackson)",
   "license": "ISC",
   "packageManager": "pnpm@10.18.3",
   "devDependencies": {
