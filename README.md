@@ -126,6 +126,23 @@
   pnpm exec playwright show-report
   ```
   It will open in browser [http://localhost:9323/](http://localhost:9323/), the report like this:
-  ![alt text](./image/image.png)
+  ![Report](./image/image.png)
 
   Close report server by `Ctrl + C` in terminal.
+### Folder Structure
+    ```bash
+    .
+    ├── node_modules    ## Project dependencies 
+    │   ├── @playwright
+    │   │   └── test -> ../.pnpm/@playwright+test@1.56.1/node_modules/@playwright/test
+    │   └── @types
+    │       └── node -> ../.pnpm/@types+node@24.9.1/node_modules/@types/node
+    ├── package.json    ## Project manifest file
+    ├── playwright-report   ## Report generated after test run
+    │   └── index.html
+    ├── playwright.config.ts    ## Playwright configuration file
+    ├── pnpm-lock.yaml  ## pnpm lock file
+    ├── test-results    ## Results generated after test run
+    └── tests   ## Test files
+        └── example.spec.ts
+    ```
