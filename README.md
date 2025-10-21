@@ -1,5 +1,7 @@
 # Playwright Tutorial
 
+[![Playwright Tutorial Tests](https://github.com/aimer1124/playwright-tutorial/actions/workflows/playwright.yml/badge.svg)](https://github.com/aimer1124/playwright-tutorial/actions/workflows/playwright.yml)
+
 ## Step 1: Install and run a demo test
 ### What is Playwright?
 - It is a modern testing framework for web apps.
